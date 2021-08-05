@@ -6,6 +6,7 @@ use Yii;
 use yii\behaviors\BlameableBehavior;
 use yii\behaviors\TimestampBehavior;
 use yii2tech\ar\softdelete\SoftDeleteBehavior;
+use yii2tech\ar\softdelete\SoftDeleteQueryBehavior;
 use Overtrue\Beiwo\Foundation\Exceptions\NotFoundException;
 
 /**
@@ -52,7 +53,7 @@ class ActiveRecord extends \yii\db\ActiveRecord
 
     /**
      * {@inheritdoc}
-     * @return ActiveQuery the newly created [[ActiveQuery]] instance.
+     * @return \yii\db\ActiveQuery the newly created [[ActiveQuery]] instance.
      */
     public static function find()
     {
