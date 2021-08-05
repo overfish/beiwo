@@ -1,0 +1,24 @@
+{
+    "name": "overfish/beiwo",
+    "description": "beiwo base composer",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "overfish",
+            "email": "mmyufish@gmail.com"
+        }
+    ],
+    "autoload": {
+        "files": [
+            "src/Foundation/helpers.php"
+        ],
+        "psr-4": {
+            "Overfish\\Beiwo\\": "src/"
+        }
+    },
+    "require": {
+        "yiisoft/yii2": "~2.0.14",
+        "yii2tech/ar-softdelete": "^1.0",
+        "myclabs/php-enum": "^1.8"
+    }
+}
